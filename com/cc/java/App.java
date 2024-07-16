@@ -7,17 +7,18 @@ public class App {
         // Instanziierung  --> Erzeugen eines Objektes
         // System.out.println(new Cat());
 
-        // cat --> Referenzvariable
-        // Cat --> Referenztyp(Klasse)
+        //Konstruktor
         Cat cat = new Cat("Grizabella","White ", 27);
         output("Blick von aussen: " + cat);
         output("Blick von innen: " + cat.getInstanceVariable());
 
 
         
-        output(cat.name);
-        output(cat.furColor);
-        output(Integer.toString(cat.age));
+        output(cat.getName());
+        output(cat.getFurColor());
+        output(Integer.toString(cat.getAge()));
+
+       
 
 
         System.out.println("----------------------------");
@@ -27,9 +28,9 @@ public class App {
         output("Blick von innen: " + cat2.getInstanceVariable());
 
 
-        output(cat2.name);
-        output(cat2.furColor);
-        output(Integer.toString(cat2.age));
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));
     }
 
        
